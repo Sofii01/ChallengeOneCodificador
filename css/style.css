@@ -207,3 +207,10 @@ button[disabled=disabled], button:disabled {
 .invisible{
 	display:none;
 }
+#firma{
+    position: relative;
+    top: 800px;
+    text-align: center;
+    font-family: 'Inter';
+    color: #495057;
+}
