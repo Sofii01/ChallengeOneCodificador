@@ -1,6 +1,6 @@
 body{
     width: 1440px;
-    height: 1024px;
+    height: 850px;
     background: #F3F5FC;
 }
 
@@ -47,7 +47,7 @@ body{
     width: 229px;
     height: 18px;
     left: 240px;
-    top: 851px;
+    top: 655px;
 }
 
 .aviso{
@@ -79,13 +79,13 @@ body{
     width: 680px;
     height: 67px;
     left: 240px;
-    top: 885px;
+    top: 697px;
 }
 
 
 
 .boton1{
-    border: 1px solid #0A3871;
+    border: 1px solid #D8DFE8;
     color: #D8DFE8;
     flex-direction: row;
     align-items: flex-start;
@@ -131,7 +131,7 @@ body{
 .rectangulo{
     position: absolute;
     width: 400px;
-    height: 944px;
+    height: 750px;
     left: 1000px;
     top: 40px;
 
@@ -141,11 +141,11 @@ body{
     border-radius: 32px;
 }
 
-.muneco{
+#muneco{
     padding: 150px 20px;
 }
 
-.span{
+#span{
     font-family: 'Inter';
     font-weight: bold;
     text-align: center;
@@ -154,7 +154,27 @@ body{
     color: #0A3871;
 }
 
-.boton3{
+#textoRespuesta{
+    display: block;
+    width: 330px;
+    height: 300px;
+    left: 100px;
+    top: 168px;
+    margin: 50px 25px 25px;
+    background:  #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 150%;
+    resize: none;
+    outline: none;
+    border: none;
+    color: #0A3871;
+
+}
+
+.botonCopy{
     box-sizing: border-box;
 
     flex-direction: row;
@@ -165,11 +185,25 @@ body{
     width: 336px;
     height: 67px;
     left: 36px;
-    top: 780px;
+    top: 655px;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     font-family: 'Inter';
     font-size: 18px;
     font-weight: bold;
+}
+
+button:active{
+	margin-top:0px;
+	border: 0;
+}
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
+.invisible{
+	display:none;
 }

@@ -11,7 +11,7 @@
     <body>
         <img class="logo"src="images/Logo.png">
 
-        <textarea class="cajaTexto">Ingrese el texto aqui</textarea>
+        <textarea id="textArea" class="cajaTexto" placeholder="Ingrese el texto aqui"></textarea>
         <div class="boxAviso">
             <img class="imgExcl" src="images/bi_exclamation-circle-fill.png">
             <p class="aviso">Solo letras minusculas y sin acentos</p>
@@ -23,14 +23,18 @@
             <button class="boton2">Desencriptar</button>
         </div>
 
-        <div class="rectangulo">
-            <img class="muneco" src="images/Muñeco.png">
-            <p class="span">Ningun mensaje fue encontrado</p>
-            <p class="span">Ingresa el texto que desees encriptar o desencriptar</p>
-            
-            
-            <button class="boton3">Copiar</button>
+        <div class="rectangulo" >
+            <img id="muneco" src="images/Muñeco.png">
+            <p id="span">Ningun mensaje fue encontrado</p>
+            <p id="span">Ingresa el texto que desees encriptar o desencriptar</p>     
         </div>
+
+        <div id="ocultar" class="rectangulo invisible">
+            <textarea id="textoRespuesta" placeholder="Esperando texto"></textarea>
+            <button  class="botonCopy">Copiar</button>
+        </div>
+        
+        <script src="js/main.js"></script>
 
     </body>
 
