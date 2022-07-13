@@ -16,11 +16,6 @@ botonDesencriptar.addEventListener("click", function(){
 
 })
 
-let copy = document.querySelector(".botonCopy");
-
-copy.addEventListener("click", function(){
-    copiar();
-})
 
 
 // funciones
@@ -28,6 +23,9 @@ copy.addEventListener("click", function(){
 function ocultarDivText(){
     let div = document.querySelector("#ocultar");
     div.classList.remove("invisible");
+
+    document.querySelector("#rectangulo").classList.add("invisible")
+
 }
 
 function encriptarTexto(texto) {
@@ -52,12 +50,7 @@ function desencriptarTexto(texto){
 }
 
 
-function copiar() {
-    var contenido = document.querySelector("#textoRespuesta");
-    contenido.select();
-    document.execCommand("botonCopy");
-    alert("Se copio el texto");
-}
+
 
 
 

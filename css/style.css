@@ -1,33 +1,28 @@
 body{
-    width: 1440px;
-    height: 850px;
+    width: 100%;
+    height: 100%;
     background: #F3F5FC;
 }
 
 .logo{
+    margin: 5%;
+}
+.bloque-conteiner{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
-
-    position: absolute;
-    width: 120px;
-    height: 48px;
-    left: 40px;
-    top: 40px;
+    flex-wrap: wrap;
 }
 
+#bloque1{
+    display: inline-block;
+    width: 50%;
+    margin-left: 5%;
+}
 .cajaTexto{
-    position: absolute;
-    width: 577px;
-    height: 300px;
-    left: 240px;
-    top: 168px;
+    width: 50%;
+    height: 350px;
     background:  #F3F5FC;
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 1.3rem;
     line-height: 150%;
     resize: none;
@@ -36,34 +31,24 @@ body{
     color: #0A3871;
 }
 
+#bloque-aviso-botones{
+    margin-top: 5%;
+    width: 80%;
+}
 
 .boxAviso{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
     gap: 8px;
-    position: absolute;
-    width: 229px;
-    height: 18px;
-    left: 240px;
-    top: 655px;
 }
 
 .aviso{
-
-    width: 180px;
-    height: 18px;
-
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
     line-height: 150%;
     color: #495057;
-
     opacity: 0.8;
-
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -72,36 +57,23 @@ body{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
     gap: 24px;
-    
-    position: absolute;
-    width: 680px;
-    height: 67px;
-    left: 240px;
-    top: 697px;
+    margin-top: 3%;
 }
-
-
 
 .boton1{
     border: 1px solid #D8DFE8;
     color: #D8DFE8;
     flex-direction: row;
     align-items: flex-start;
-    padding: 20px;
     gap: 8px;
-    width: 328px;
+    width: 45%;
     height: 67px;
     background: #0A3871;
     border-radius: 24px;
     flex: none;
-    order: 0;
-    flex-grow: 0;
     font-size: 20px;
     font-weight: bold;
-    text-align: center;
-    
 }
 
 .boton2{
@@ -109,40 +81,33 @@ body{
     background: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 24px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
     color: #0A3871;
-   
-  
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 20px;
     gap: 8px;
-
-    width: 328px;
+    width: 45%;
     height: 67px;
     font-size: 20px;
     font-weight: bold;
-    text-align: center;
-    
+}
+
+#bloque2{
+    display: inline-block;
+    width: 40%;
 }
 
 .rectangulo{
-    position: absolute;
-    width: 400px;
-    height: 750px;
-    left: 1000px;
-    top: 40px;
-
+    width: 100%;
+    height: 100%;
     background: #FFFFFF;
-
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 350px;
 }
 
 #muneco{
-    padding: 150px 20px;
+    width: 60%;
 }
 
 #span{
@@ -155,11 +120,9 @@ body{
 }
 
 #textoRespuesta{
-    display: block;
-    width: 330px;
+    width: 90%;
     height: 300px;
-    left: 100px;
-    top: 168px;
+
     margin: 50px 25px 25px;
     background:  #FFFFFF;
     font-family: 'Inter';
@@ -176,21 +139,13 @@ body{
 
 .botonCopy{
     box-sizing: border-box;
-
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
-    position: absolute;
-    width: 336px;
+    width: 50%;
     height: 67px;
-    left: 36px;
-    top: 655px;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     font-family: 'Inter';
-    font-size: 18px;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -209,8 +164,28 @@ button[disabled=disabled], button:disabled {
 }
 #firma{
     position: relative;
-    top: 800px;
+    top: 80%;
+    margin-top: 5%;
     text-align: center;
     font-family: 'Inter';
     color: #495057;
 }
+
+@media screen  and (max-width:480px){
+    #bloque1{
+        width: 100%;
+    }
+    #textArea{
+        width: 80%;
+    }
+    .boton1{
+        font-size: 15px;
+    }
+    .boton2{
+        font-size: 15px;
+    }
+    #bloque2{
+        width: 100%;
+    }
+}
+
